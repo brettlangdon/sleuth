@@ -70,7 +70,7 @@
     }
   };
 
-  Sleuth.prototype.onunload = function(){
+  Sleuth.prototype.captureWindowPerformance = function(){
     if(this.config.performance && window.performance !== undefined){
       if(window.performance.timing !== undefined){
         this.data.timing = window.performance.timing;
@@ -82,7 +82,15 @@
         };
       }
     }
-    this.sendAllData();
+  };
+
+  Sleuth.prototype.onunload = function(){
+    if(this.config.performance){
+      this.captureWindowPerformance();
+    }
+    if(this.config.unload){
+      this.sendAllData();
+    }
   };
 
   Sleuth.prototype.sendData = function(data){
