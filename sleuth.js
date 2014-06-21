@@ -52,6 +52,7 @@
   };
 
   var Sleuth = function(){
+    this.version = '0.1.0';
     this.config = {
       url: '/track',
       unload: true,
