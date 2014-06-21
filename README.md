@@ -32,6 +32,7 @@ Include js on your page:
 <script type="text/javascript" src="https://raw.githubusercontent.com/brettlangdon/sleuth/master/sleuth.min.js"></script>
 ```
 
+### Configure
 You can configure custom settings like so:
 ```html
 <script type="text/javascript">
@@ -43,6 +44,7 @@ Sleuth.init({
 </script>
 ```
 
+### Tagging the Page
 Add tags to the session:
 ```html
 <script type="text/javascript"
@@ -50,6 +52,7 @@ Sleuth.tag('user', 'guest');
 </script>
 ```
 
+### Tracking Data
 Track some data:
 ```html
 <script type="text/javascript">
@@ -57,6 +60,7 @@ Sleuth.track('clicks', 5);
 </script>
 ```
 
+### Syncing Data
 Manually send some data:
 ```html
 <script type="text/javascript">
