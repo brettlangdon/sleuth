@@ -47,7 +47,7 @@ Sleuth.init({
 ### Tagging the Page
 Add tags to the session:
 ```html
-<script type="text/javascript"
+<script type="text/javascript"/>
 Sleuth.tag('user', 'guest');
 </script>
 ```
