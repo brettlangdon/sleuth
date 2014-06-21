@@ -1,6 +1,8 @@
 Sleuth.js
 ========
 
+Simple JavaScript metrics beacon library.
+
 ## Configuration Settings
 
 * `url` - url/endpoint where to send all data (default: `/track`)
